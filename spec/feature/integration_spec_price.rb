@@ -9,6 +9,6 @@ RSpec.describe 'Creating a book', type: :feature do
 	fill_in 'Price', with: '12.99'
     click_on 'Create Book'
     visit books_path
-    expect(page).to have_content('harry potter')
+    expect(page).to have_content('12.99')
   end
 end
